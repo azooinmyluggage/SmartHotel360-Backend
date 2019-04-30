@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '4d4622a3-302e-4085-ac92-44bba7e6ed96'
   imageRepository: 'sh'
   containerRegistry: 'atulmakshelm.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: 'SmartHotel.Services.Reviews/Dockerfile'
   tag: '$(Build.BuildId)'
   
   # Kubernetes Namespace
