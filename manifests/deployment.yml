@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: sh 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sh 
+    spec:
+      containers:
+        - name: sh 
+          image: atulmakshelm.azurecr.io/sh 
+          ports:
+          - containerPort: 80
